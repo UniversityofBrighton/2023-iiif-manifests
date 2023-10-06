@@ -190,6 +190,30 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="urls.html">2. URLs</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="web-services.html">3. Web server</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -246,7 +270,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">introduction</a></p>
 <hr>
-<p> Last updated on 2023-10-05 | 
+<p> Last updated on 2023-10-06 | 
         
         <a href="https://github.com/karina-rodriguez/2023-iiif-manifests/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -419,7 +443,200 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section>
+</section></section><section id="aio-urls"><p>Content from <a href="urls.html">URLs</a></p>
+<hr>
+<p> Last updated on 2023-10-06 | 
+        
+        <a href="https://github.com/karina-rodriguez/2023-iiif-manifests/edit/main/episodes/urls.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What do I need to do if I want to create stories with my own
+multi-dimensional linked data?</li>
+<li>What type of infrastructure is required for linking
+multi-dimensional data over the web?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>To explore the basics of linking data by understanding what is a web
+severs</li>
+<li>To experience the type of environments that are web servers</li>
+<li>Understand how web servers work by simulating one in a local
+computer</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>In order to understand how to link multi-dimensional data, it is
+first necessary to learn how data, of any type, is made available over
+the Internet.</p>
+<div class="section level3">
+<h3 id="urls">URLS<a class="anchor" aria-label="anchor" href="#urls"></a>
+</h3>
+<p>You might be familiar with websites and how they display a mixture of
+content, including text, images, video or 3D models. The webpage is
+written in HTML and other web-languages, such as JavaScript, TypeScript
+or PHP.</p>
+<p>Usually, we can link or find a website on a browser through its URL
+(Uniform Resource Locator), such as <a href="http://www.brighton.ac.uk" class="external-link">https://www.brighton.ac.uk</a>, <a href="https://www.europeana.eu/en" class="external-link">https://www.europeana.eu/en</a>.</p>
+<p>Furthermore, URLs can contain a link to a specific section within a
+web page by using anchors. You will notice the use of anchors on a URL,
+as they include using a <strong>#</strong> symbol followed by a word.
+This word is usually defined in the HTML code so that the webpage knows
+which part the user is looking for.</p>
+<p>See these examples:</p>
+
+<div id="challenge-1-try-this-examples" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-1-try-this-examples" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Try this examples<a class="anchor" aria-label="anchor" href="#challenge-1-try-this-examples"></a>
+</h3>
+<div class="callout-content">
+<p>What is the difference of navigating to these two different URLs</p>
+<ul>
+<li><a href="https://sdgs.un.org/" class="external-link">https://sdgs.un.org/</a></li>
+<li><a href="https://sdgs.un.org/#goal_section" class="external-link">https://sdgs.un.org/#goal_section</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>You will notice that the URL that contains the <strong>#</strong>
+symbol in the URL takes you to the sepecific section with the 17 SDG
+goals.</p>
+</div>
+</div>
+</div>
+</div>
+<p>URLs can become more complex if we want the server which is ‘serving’
+our webpage to perform any additional functionality before, during or
+after loading the webpage. Sometimes, we might find a <strong>?</strong>
+symbol in the URL. This symbol signifies that some text will be passed
+as data to the server. The server might be running additional code which
+will process this text and change the content of the webpage
+accordingly.</p>
+<div id="challenge-1-use-a-query-in-a-url" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-1-use-a-query-in-a-url" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Use a query in a URL<a class="anchor" aria-label="anchor" href="#challenge-1-use-a-query-in-a-url"></a>
+</h3>
+<div class="callout-content">
+<p>Try searching a word in the [Europeana homepage][Europeana]</p>
+<p>For example, search for the word: ‘modernism’</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>You will note that the URL contains the word modernism:</p>
+<p><a href="https://www.europeana.eu/en/search?page=1&amp;view=grid&amp;query=modernism" class="external-link">https://www.europeana.eu/en/search?page=1&amp;view=grid&amp;query=modernism</a></p>
+<p>Now, try changing directly the search term to the URL to another
+word.</p>
+<p>Go back to the [Europeana homepage][Europeana].</p>
+<p>What happens to the URL when you add more than one word in the
+search? Why?</p>
+</div>
+</div>
+</div>
+</div>
+<p>Finally, many webservers make use of the full URL path to send
+information to the server. A URL path usually specifies the location of
+the file or resource that the user wants to access in the server.</p>
+<p>You will find this usually with images, PDF and other multimedia file
+that a webpage will be including. For example: <a href="https://culturedigitalskills.org/wp-content/uploads/Logo-Banner-3-1-1024x244.png" class="external-link">https://culturedigitalskills.org/wp-content/uploads/Logo-Banner-3-1-1024x244.png</a></p>
+<p>The URL path can also be used to specify text to the server, so that
+this is processed. After processing the URL request the server will
+return a webpage. For example,</p>
+<p>This method is usually used by Application Programming Interfaces or
+(APIs). In this lesson, we won’t explore this subject in detail. But it
+will be good you are aware that the information is passed to the server
+via the URL path.</p>
+<p>For example, try the URL:</p>
+<p><a href="https://gtr.gtr.ukri.org/gtr/api/projects/5B805CC1-2B54-4CAE-9243-8EF4AFC35E7E" class="external-link">https://gtr.gtr.ukri.org/gtr/api/projects/5B805CC1-2B54-4CAE-9243-8EF4AFC35E7E</a></p>
+<p>This URL queries an API to retrieve information that is contained in
+the database about the AHRC funded project ‘A Roadmap for a National
+Training Centre on Multidimensional Digital Media in the Arts and
+Humanities’. As you will see in the webpage, the information is not an
+HTML page but another structured type of data which contains various
+pieces of information about the project.</p>
+<p>To understand how to use these URL, you usually need the guide to the
+API, such as the <a href="https://gtr.ukri.org/resources/GtR-2-API-v1.7.5.pdf" class="external-link">Gateway to
+research guide</a>.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>URLs can be a simple means to find a website</li>
+<li>URLs can also include additional information which allows a server
+to change how the webpage is ‘served’</li>
+<li>URLs also provide the means to use a website as a database which can
+be queried via the URL path.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</div>
+</section></section><section id="aio-web-services"><p>Content from <a href="web-services.html">Web server</a></p>
+<hr>
+<p> Last updated on 2023-10-06 | 
+        
+        <a href="https://github.com/karina-rodriguez/2023-iiif-manifests/edit/main/episodes/web-services.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" class="external-link">What
+is a web server?</a></p>
+<p>Websites rely on software that runs on what is known as a <strong>web
+server</strong>.</p>
+<p>A web server is a</p>
+<p>Web servers</p></section>
 </div>
     </main>
 </div>
@@ -468,8 +685,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2023-iiif-manifests/aio.html",
   "identifier": "https://karina-rodriguez.github.io/2023-iiif-manifests/aio.html",
   "dateCreated": "2023-10-04",
-  "dateModified": "2023-10-05",
-  "datePublished": "2023-10-05"
+  "dateModified": "2023-10-06",
+  "datePublished": "2023-10-06"
 }
 
   </script><script>
