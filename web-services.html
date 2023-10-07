@@ -147,7 +147,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. introduction</a>
+        <a href="introduction.html">1. Introduction</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -165,12 +165,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. Web server
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+        
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#more-information">More information</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -233,7 +240,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Web server</h1>
-        <p> Last updated on 2023-10-06 | 
+        <p> Last updated on 2023-10-07 | 
         
         <a href="https://github.com/karina-rodriguez/2023-iiif-manifests/edit/main/episodes/web-services.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -245,20 +252,41 @@
 
         
 
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" class="external-link">What
-is a web server?</a></p>
-<p>Websites rely on software that runs on what is known as a <strong>web
-server</strong>.</p>
-<p>A web server is a</p>
+<p>Websites rely on software that runs on a machine, which we usually
+refer to as a server, Hence, the software is normally known as a
+<strong>web server</strong>. An webserver is running continously in the
+machine. Its job is to receive a request and deliver some content to the
+end user’s device.</p>
+<p>The web server can deliver an HTML web page. It can also call
+additional software applications by passing the input the user gave via
+the URL. The software then processes the input and provides a suitable
+response.</p>
+<p>## Where I can get a server?</p>
+<p>Any PCs which is connected to the Internet could act as a server, but
+you will usually require one with suitable specificaitons depending on
+the software that it needs to run. There are also virutal servers which
+commercial companies provide access to. This are normally focused on
+web-hosting, and provide GUIs to easily deploy websites and other common
+types of software.</p>
+<p>To learn how web severs work, we will deploy a basic solution in this
+tutorial using a container platform. A ** software container** is a
+readily-made software system which already includes all the software
+dependencies and configurations required to run. The software docker is
+a popular system to create and deploy containers. So, we will use
+thos</p>
+<section id="more-information"><h2 class="section-heading">More information<a class="anchor" aria-label="anchor" href="#more-information"></a>
+</h2>
+<hr class="half-width"><ul><li>What is a web server?: <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" class="external-link">https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server</a>
+</li>
+<li>Reproducible Containers Environments: <a href="https://carpentries-incubator.github.io/docker-introduction/" class="external-link">https://carpentries-incubator.github.io/docker-introduction/</a>
+</li>
+</ul><p>A web server is a</p>
 <p>Web servers</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="urls.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -317,8 +345,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2023-iiif-manifests/web-services.html",
   "identifier": "https://karina-rodriguez.github.io/2023-iiif-manifests/web-services.html",
   "dateCreated": "2023-10-04",
-  "dateModified": "2023-10-06",
-  "datePublished": "2023-10-06"
+  "dateModified": "2023-10-07",
+  "datePublished": "2023-10-07"
 }
 
   </script><script>
