@@ -4,6 +4,19 @@ teaching: 10
 exercises: 2
 ---
 
+
+## Introduction 
+
+You might already be familiar with websites bringing together a mixture
+of content, such text, images, video or 3D models. Delivering stories over
+the web by using a browser provides many advantages. This includes 
+people being able to easily access the content regardless of which
+platform they are using, such as PCs, mobiles or a VR headets.
+
+In order to understand how to create stories over the web that 
+link multi-dimensional data, it is first necessary 
+to learn how data, of any type, is made available over the Internet.
+
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What do I need to do if I want to create stories with my own multi-dimensional linked data?
@@ -19,17 +32,9 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction 
+A webpage is usually written in HTML and other web-languages, 
+such as JavaScript, TypeScript or PHP.
 
-In order to understand how to link multi-dimensional data, it is first necessary 
-to learn how data, of any type, is made available over the Internet.
-
-
-### URLS
-
-You might be familiar with websites and how they display a mixture
-of content, including text, images, video or 3D models. The webpage is
-written in HTML and other web-languages, such as JavaScript, TypeScript or PHP.
 
 Usually, we can link or find a website on a browser 
 through its URL (Uniform Resource Locator),
@@ -135,7 +140,6 @@ data which contains various pieces of information about the project.
 
 To understand how to use these URL, you usually need the guide to the API, such as the
 [Gateway to research guide](https://gtr.ukri.org/resources/GtR-2-API-v1.7.5.pdf).
-
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
