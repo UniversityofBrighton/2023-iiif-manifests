@@ -175,7 +175,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="web-services.html">3. Web server</a>
+        <a href="web-services.html">3. Web Services in a Container</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -233,13 +233,13 @@
           Previous: Introduction
         </a>
         <a class="chapter-link float-end" href="../instructor/web-services.html" rel="next">
-          Next: Web server... 
+          Next: Web Services in a... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>URLs</h1>
-        <p> Last updated on 2023-10-07 | 
+        <p> Last updated on 2023-10-09 | 
         
         <a href="https://github.com/karina-rodriguez/2023-iiif-manifests/edit/main/episodes/urls.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -292,8 +292,47 @@ computer</li>
 </div>
 <p>A webpage is usually written in HTML and other web-languages, such as
 JavaScript, TypeScript or PHP.</p>
-<p>Usually, we can link or find a website on a browser through its URL
-(Uniform Resource Locator), such as <a href="http://www.brighton.ac.uk" class="external-link">https://www.brighton.ac.uk</a>, <a href="https://www.europeana.eu/en" class="external-link">https://www.europeana.eu/en</a>.</p>
+<div id="challenge-create-simple-html-page" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-create-simple-html-page" class="callout-inner">
+<h3 class="callout-title">Challenge: Create simple html page<a class="anchor" aria-label="anchor" href="#challenge-create-simple-html-page"></a>
+</h3>
+<div class="callout-content">
+<p>In your PC, create a new folder called <em>‘htmlpages’</em>.</p>
+<p>Using a texteditor, create a new file and copy the following HTML
+code:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;head&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;title&gt;</span>My Webpage<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;body&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h1&gt;</span>My Webpage<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p&gt;</span>Welcome to My Very Own Webpage<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/body&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span></code></pre>
+</div>
+<p>Save it as <em>index.html</em> in the folder you just created.</p>
+<p>If you open a <em>File Explorer</em> you will be able to see the
+browser opening your file and displaying the text on the web
+browser.</p>
+</div>
+</div>
+</div>
+<p>The previous example showed you an HTML file in the local
+computer.</p>
+<p>Normally, websites with HTML files are in remote computers so that
+everyone can access them. To find them, we use a link on a browser
+called an URL (Uniform Resource Locator), such as <a href="http://www.brighton.ac.uk" class="external-link">https://www.brighton.ac.uk</a>, <a href="https://www.europeana.eu/en" class="external-link">https://www.europeana.eu/en</a>.</p>
 <p>Furthermore, URLs can contain a link to a specific section within a
 web page by using anchors. You will notice the use of anchors on a URL,
 as they include using a <strong>#</strong> symbol followed by a word.
@@ -308,7 +347,7 @@ which part the user is looking for.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>This is a very simple browser exercise, but it serves to get the
 student thinking on things which are added to a URL for processing by
@@ -338,7 +377,7 @@ the webserver.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>You will notice that the URL that contains the <strong>#</strong>
 symbol in the URL takes you to the sepecific section with the 17 SDG
@@ -354,12 +393,12 @@ symbol in the URL. This symbol signifies that some text will be passed
 as data to the server. The server might be running additional code which
 will process this text and change the content of the webpage
 accordingly.</p>
-<div id="challenge-1-use-a-query-in-a-url" class="callout challenge">
+<div id="challenge-use-a-query-in-a-url" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1-use-a-query-in-a-url" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Use a query in a URL<a class="anchor" aria-label="anchor" href="#challenge-1-use-a-query-in-a-url"></a>
+<div id="challenge-use-a-query-in-a-url" class="callout-inner">
+<h3 class="callout-title">Challenge: Use a query in a URL<a class="anchor" aria-label="anchor" href="#challenge-use-a-query-in-a-url"></a>
 </h3>
 <div class="callout-content">
 <p>Try searching a word in the [Europeana homepage][Europeana]</p>
@@ -374,7 +413,7 @@ accordingly.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You will note that the URL contains the word modernism:</p>
 <p><a href="https://www.europeana.eu/en/search?page=1&amp;view=grid&amp;query=modernism" class="external-link">https://www.europeana.eu/en/search?page=1&amp;view=grid&amp;query=modernism</a></p>
@@ -442,7 +481,7 @@ any links that you are not going to use.
           Previous: Introduction
         </a>
         <a class="chapter-link float-end" href="../instructor/web-services.html" rel="next">
-          Next: Web server... 
+          Next: Web Services in a... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -468,7 +507,7 @@ any links that you are not going to use.
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
         <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.0" class="external-link">sandpaper (0.14.0)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.7.1" class="external-link">pegboard (0.7.1)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.3.0" class="external-link">varnish (0.3.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.3.1" class="external-link">varnish (0.3.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -489,8 +528,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2023-iiif-manifests/instructor/urls.html",
   "identifier": "https://karina-rodriguez.github.io/2023-iiif-manifests/instructor/urls.html",
   "dateCreated": "2023-10-04",
-  "dateModified": "2023-10-07",
-  "datePublished": "2023-10-07"
+  "dateModified": "2023-10-09",
+  "datePublished": "2023-10-09"
 }
 
   </script><script>
