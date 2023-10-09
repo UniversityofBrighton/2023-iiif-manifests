@@ -35,9 +35,51 @@ to learn how data, of any type, is made available over the Internet.
 A webpage is usually written in HTML and other web-languages, 
 such as JavaScript, TypeScript or PHP.
 
+::::::::::::::::::::::::::::::::::::: challenge
 
-Usually, we can link or find a website on a browser 
-through its URL (Uniform Resource Locator),
+## Challenge: Create simple html page
+
+In your PC, create a new folder called *'htmlpages'*.
+
+Using a texteditor, create a new file and copy the following
+HTML code:
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Webpage</title>
+</head>
+<body>
+
+<h1>My Webpage</h1>
+<p>Welcome to My Very Own Webpage</p>
+
+</body>
+</html>
+
+
+```
+
+Save it as *index.html* in the folder you just created. 
+
+If you open a *File Explorer* you will be able to see the
+browser opening your file and displaying the text on the web
+browser.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+The previous example showed you an HTML file
+in the local computer. 
+
+Normally, websites with HTML files
+are in remote computers so that everyone can access them. 
+To find them, we use 
+a link on a browser 
+called an URL (Uniform Resource Locator),
 such as [https://www.brighton.ac.uk](http://www.brighton.ac.uk), 
 [https://www.europeana.eu/en](https://www.europeana.eu/en). 
 
@@ -85,7 +127,7 @@ and change the content of the webpage accordingly.
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Use a query in a URL
+## Challenge: Use a query in a URL
 
 Try searching a word in the [Europeana homepage][Europeana]
 
