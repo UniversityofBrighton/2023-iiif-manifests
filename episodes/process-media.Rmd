@@ -6,6 +6,8 @@ exercises: 2
 
 ## Search for content
 
+Search for 6-8 images.
+
 Repositories on which you might find this, include:
 
 - [Journal of Digital History Journal](https://journalofdigitalhistory.org/)
@@ -37,7 +39,15 @@ This command in the console uses [ImageMagick](https://imagemagick.org/index.php
 where:
 
 - **images** is the folder where you have your images,
-- **alltifs** is the folder where you want to store your results
+- **alltifs** is the folder where you want to store your results. You can name
+this folder as you want.
+
+## IIIF server
+
+
+URL will look something like this:
+[https://6fzwqjk2sg.execute-api.eu-west-2.amazonaws.com/latest/iiif/2/storymaking-tutorial%2FEuropeana.eu-987-data_euscreenXL_DEMA_169-4c1f3de50624e0ebbfd1da3497dbee7b/info.json](https://6fzwqjk2sg.execute-api.eu-west-2.amazonaws.com/latest/iiif/2/storymaking-tutorial%2FEuropeana.eu-987-data_euscreenXL_DEMA_169-4c1f3de50624e0ebbfd1da3497dbee7b/info.json)
+https://6fzwqjk2sg.execute-api.eu-west-2.amazonaws.com/latest/iiif/2/storymaking-tutorial%2Ffigure2/info.json
 
 
 ## Creating a manifest:
@@ -57,15 +67,6 @@ Save the file using a recognisable name, such as:
 
 in your html folder, you should be able to access it.
 
-
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge: Create all manifests for your folder
-
-Copy an image into your same folder.
-
-Link the image from the main *index.html* page.
 
 
 
