@@ -252,7 +252,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Web Services in a Container</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/karina-rodriguez/2023-iiif-manifests/edit/main/episodes/web-services.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -301,24 +301,28 @@ laptop or PC.</p>
 search for already packaged contaners in <a href="https://hub.docker.com/" class="external-link">Docker Hub</a>. Type in the Search
 textbox the following container:
 <strong>karinardz/local-web-server</strong></p>
-<figure><img src="fig/searchinbar.png" alt="Download local-web-server." class="figure mx-auto d-block"><figcaption>Search in Docker Hub for
-karinardz/local-web-server</figcaption></figure><p>If you know how to use the command line, you can also call commands
+<figure><img src="fig/searchinbar.png" alt="Download local-web-server." class="figure mx-auto d-block"><div class="figcaption">Search in Docker Hub for
+karinardz/local-web-server</div>
+</figure><p>If you know how to use the command line, you can also call commands
 from Docker through the command line:</p>
 <pre class="console"><code>foo@bar:~$ docker pull karinardz/local-web-server</code></pre>
 <p>Once you pull the image you should be able to see this in your Docker
 list of images.</p>
-<figure><img src="fig/imagesweb-server.png" alt="Local local-web-server." class="figure mx-auto d-block"><figcaption>Docker Desktop application showing
-karinardz/local-web-server image has been downloaded</figcaption></figure><p>To run the container, click on the <em>Play</em> button, and specify
+<figure><img src="fig/imagesweb-server.png" alt="Local local-web-server." class="figure mx-auto d-block"><div class="figcaption">Docker Desktop application showing
+karinardz/local-web-server image has been downloaded</div>
+</figure><p>To run the container, click on the <em>Play</em> button, and specify
 the following Optional Settings before clickin on <em>Run</em> (see
 image below):</p>
 <ul><li>Container name: my-local-webserver</li>
 <li>Ports: 80</li>
 <li>Volumes: select the folder where you created an HTML page</li>
 <li>Container path: /var/www/html</li>
-</ul><figure><img src="fig/dockervar.png" alt="variables web server docker" class="figure mx-auto d-block"><figcaption>Docker Desktop ‘Run a new container’ interface to
-input parameters</figcaption></figure><p>Finally, open on the browser the URL: <a href="http://localhost:80" class="external-link">http://localhost:80</a></p>
-<figure><img src="fig/webseverhtml.png" alt="local web server created by Docker" class="figure mx-auto d-block"><figcaption>Browser showing the index.html page on the local web
-server</figcaption></figure><div id="challenge-add-a-new-page" class="callout challenge">
+</ul><figure><img src="fig/dockervar.png" alt="variables web server docker" class="figure mx-auto d-block"><div class="figcaption">Docker Desktop ‘Run a new container’ interface
+to input parameters</div>
+</figure><p>Finally, open on the browser the URL: <a href="http://localhost:80" class="external-link">http://localhost:80</a></p>
+<figure><img src="fig/webseverhtml.png" alt="local web server created by Docker" class="figure mx-auto d-block"><div class="figcaption">Browser showing the index.html page on the local
+web server</div>
+</figure><div id="challenge-add-a-new-page" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -345,8 +349,8 @@ You can add some more text or other elements.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"page1.html"</span><span class="kw">&gt;</span>Access more information<span class="kw">&lt;/a&gt;</span></span></code></pre>
+<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"page1.html"</span><span class="dt">&gt;</span>Access more information<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -387,8 +391,8 @@ You can add some more text or other elements.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"myimage.png"</span><span class="kw">&gt;</span>This is my new image<span class="kw">&lt;/a&gt;</span></span></code></pre>
+<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"myimage.png"</span><span class="dt">&gt;</span>This is my new image<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -464,8 +468,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2023-iiif-manifests/web-services.html",
   "identifier": "https://karina-rodriguez.github.io/2023-iiif-manifests/web-services.html",
   "dateCreated": "2023-10-04",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
